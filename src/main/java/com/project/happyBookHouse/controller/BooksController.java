@@ -39,7 +39,7 @@ public class BooksController {
         if (StringUtils.isEmpty(isbn) || StringUtils.isEmpty(quantity)) {
             result = "isbn or Quantity is empty or null";
         }
-        bookDetailsService.updateBook(isbn,quantity);
+        result = bookDetailsService.updateBook(isbn,quantity);
         return result;
     }
 
@@ -47,7 +47,7 @@ public class BooksController {
     public String deleteBook(@PathVariable String isbn) {
         String result = null;
         if(StringUtils.isNotBlank(isbn)) {
-            bookDetailsService.deleteBook(isbn);
+            result = bookDetailsService.deleteBook(isbn);
         }
         return result;
     }

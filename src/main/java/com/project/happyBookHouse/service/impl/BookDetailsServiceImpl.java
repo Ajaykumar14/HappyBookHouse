@@ -72,8 +72,8 @@ public class BookDetailsServiceImpl implements BookDetailsService {
         return null;
     }
 
-    public Map<String ,List<BookDetails>> getBooksByCategory() {
-        Map<String ,List<BookDetails>> bookDetails = null;
+    public Map<String, List<BookDetails>> getBooksByCategory() {
+        Map<String, List<BookDetails>> bookDetails = null;
 
         return bookDetails;
     }
